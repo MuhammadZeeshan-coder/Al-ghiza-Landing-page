@@ -8,18 +8,19 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #000;
     backdrop-filter: blur(6px);
 }
 
 .navbar .nav-link {
-    color: #d4af37 !important;
+    color: #d4af37;
     font-weight: 500;
 }
 
 .navbar .nav-link:hover {
-    color: #fff !important;
+    color: #fff;
 }
+
 /* Remove default background */
 .custom-toggler {
     border: 1px solid #d4af37;
@@ -32,7 +33,7 @@ body {
 
 /* Hero with background image */
 #home {
-    background-image: url(https://media.gettyimages.com/id/2026406120/video/motion-control-time-lapse-close-up-sunrise-over-golden-wheat-crop.jpg?s=640x640&k=20&c=NoOMXVC1shPaeJYxF7mTAFWUioXUv7ReWreqkTbyCuw=);
+    background-image: url(https://www.shutterstock.com/image-vector/hand-drawn-food-seamless-pattern-600nw-2469196903.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -42,7 +43,9 @@ body {
     align-items: center;
     text-align: center;
 }
-
+h1{
+    
+}
 #home img {
     max-width: 180px;
 }
@@ -51,12 +54,25 @@ section {
     padding: 80px 0;
 }
 
-h2 {
-    color: #8b5e2b;
+h2.semi-heading{
+    color: #d4af37;
     font-weight: 700;
     margin-bottom: 20px;
+    font-family: Poppins;
 }
-
+img.about{
+    border-radius: 12px;
+}
+button.about{
+    padding: 5px ;
+    background-color: #d4af37;
+    color: #fff;
+}
+button.about:hover{
+    opacity: 80%;
+    background-color: #d4af37;
+    color: #fff;
+}
 /* Product cards */
 .product-card {
     border: none;
@@ -71,18 +87,25 @@ h2 {
 }
 
 .product-card img {
-    height: 220px;
+    height: 320px;
     object-fit: cover;
 }
-
-/* Gallery */
 #gallery img {
     height: 450px;
     object-fit: cover;
     border-radius: 12px;
 }
-img.gallery {
-    width: 100%;
+/*why choose*/
+.whyus{
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    transition: transform .3s, box-shadow .3s;
+    height: 100%;
+}
+
+.whyus:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 }
 /* Footer */
 footer {
